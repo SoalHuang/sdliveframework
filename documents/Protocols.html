@@ -14,7 +14,7 @@
     <a title="Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">SDLiveProject 1.0.5 Docs</a> (29% documented)</p>
+        <p><a href="index.html">SDLiveProject 1.1.5 Docs</a> (27% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -46,6 +46,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SDLiveDownloadManager.html">SDLiveDownloadManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SDLiveEnvironment.html">SDLiveEnvironment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SDLiveEnvironmentService.html">SDLiveEnvironmentService</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SDLiveError.html">SDLiveError</a>
@@ -98,10 +104,16 @@
                 <a href="Constants.html#/c:SDLiveDownloadManager.h@SDLiveDownloadErrorDomain">SDLiveDownloadErrorDomain</a>
               </li>
               <li class="nav-group-task">
+                <a href="Constants.html#/c:@SDLiveErrorDomain">SDLiveErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Constants.html#/c:@SDLiveProjectVersionNumber">SDLiveProjectVersionNumber</a>
               </li>
               <li class="nav-group-task">
                 <a href="Constants.html#/c:@SDLiveProjectVersionString">SDLiveProjectVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@SDLiveServerErrorDomain">SDLiveServerErrorDomain</a>
               </li>
               <li class="nav-group-task">
                 <a href="Constants.html#/c:SDLiveDownloadManager.h@SunliveDownloadIdentifier">SunliveDownloadIdentifier</a>
@@ -165,6 +177,9 @@
                 <a href="Protocols/SDLiveDownloadManagerDelegate.html">SDLiveDownloadManagerDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols/SDLiveEnvironmentProtocol.html">SDLiveEnvironmentProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/SDLiveIMDelegate.html">SDLiveIMDelegate</a>
               </li>
               <li class="nav-group-task">
@@ -192,6 +207,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Type%20Definitions/SDLiveDownloadStatus.html">SDLiveDownloadStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions/SDLiveFakeLiveMode.html">SDLiveFakeLiveMode</a>
               </li>
               <li class="nav-group-task">
                 <a href="Type%20Definitions.html#/c:SDLiveDefine.h@T@SDLiveNumber">SDLiveNumber</a>
@@ -272,10 +290,78 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SDLiveEnvironmentProtocol"></a>
+                    <a name="//apple_ref/objc/Protocol/SDLiveEnvironmentProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SDLiveEnvironmentProtocol">SDLiveEnvironmentProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Protocols/SDLiveEnvironmentProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SDLiveEnvironmentProtocol</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
+<span class="c1">//平台化</span>
+<span class="c1">//平台化直播websocket连接地址</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">liveSockerUrl</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">recordLoginUrl</span><span class="p">;</span>
+
+<span class="c1">//平台化-第三方点播离线播放获取全量数据</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">thirdHttpVideoGetFullMsg</span><span class="p">;</span>
+<span class="c1">//第三方获取音频数据</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">thirdHttpVideoHostGetmedia</span><span class="p">;</span>
+
+<span class="c1">//直播认证地址</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">authLiveHost</span><span class="p">;</span>
+
+<span class="c1">//点播认证地址</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">authVideoHost</span><span class="p">;</span>
+<span class="c1">//点播host</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">httpVideoHost</span><span class="p">;</span>
+<span class="c1">//点播登录地址</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">httpVideoHostLogin</span><span class="p">;</span>
+<span class="c1">//点播获取页面信息地址</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">httpVideoHostGetpage</span><span class="p">;</span>
+<span class="c1">//点播心跳地址</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">httpVideoHostHeartBeat</span><span class="p">;</span>
+<span class="c1">//点播获取事件流地址</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">httpVideoHostGetIncreaseMessage</span><span class="p">;</span>
+
+<span class="c1">//获取音频地址</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">httpVideoHostGetmedia</span><span class="p">;</span>
+<span class="c1">//离线下载获取全量信息</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">httpVideoGetFullMsg</span><span class="p">;</span>
+<span class="c1">//埋点url</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">httpBlockUrl</span><span class="p">;</span>
+<span class="c1">//IM获取的头像前缀</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">imHeadPrefix</span><span class="p">;</span>
+<span class="c1">//IM获取历史消息地址</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">imHistoryMessageHost</span><span class="p">;</span>
+<span class="c1">//IM websocket地址</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">copy</span><span class="p">,</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">imSocketUrl</span><span class="p">;</span>
+<span class="k">@end</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SDLiveEnvironmentProtocol</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -309,10 +395,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -335,9 +417,9 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SDLiveManagerDelegate</span>
-<span class="c1">//流程图
-//https://www.processon.com/diagraming/5c147216e4b06db7dfdda988
-</span>
+<span class="c1">//流程图</span>
+<span class="c1">//https://www.processon.com/diagraming/5c147216e4b06db7dfdda988</span>
+
 <span class="cm">/**
  时间回调
 
@@ -345,11 +427,13 @@
  @param duration 视频总时长
  @param currentPlayTime 当前播放时长
  @param cachedDuration 已缓存的视频时长
+ @param sequence 同步序列
  */</span>
 <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">manager</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
        <span class="nf">duration</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">duration</span>
 <span class="nf">currentPlayTime</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">currentPlayTime</span>
-<span class="nf">cacheVideoDuration</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">cachedDuration</span><span class="p">;</span>
+<span class="nf">cacheVideoDuration</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">cachedDuration</span>
+       <span class="nf">sequence</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">sequence</span><span class="p">;</span>
 
 <span class="cm">/**
  播放器状态回调
@@ -360,21 +444,21 @@
 <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">manager</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
       <span class="nf">playState</span><span class="p">:(</span><span class="n"><a href="Enums/SDLiveMoviePlaybackState.html">SDLiveMoviePlaybackState</a></span><span class="p">)</span><span class="nv">state</span><span class="p">;</span>
 
-<span class="c1">//播放器加载状态回调
-</span><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">manager</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
+<span class="c1">//播放器加载状态回调</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">manager</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
       <span class="nf">loadState</span><span class="p">:(</span><span class="n"><a href="Enums/SDLiveMovieLoadState.html">SDLiveMovieLoadState</a></span><span class="p">)</span><span class="nv">state</span><span class="p">;</span>
 
-<span class="c1">//播放器错误回调，播放器播放遇到错误，包括IJKPlayer自身的bug、拉流链接错误等，会触发。
-//仅展示不用处理
-</span><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">manager</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
+<span class="c1">//播放器错误回调，播放器播放遇到错误，包括IJKPlayer自身的bug、拉流链接错误等，会触发。</span>
+<span class="c1">//仅展示不用处理</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">manager</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
     <span class="nf">onPlayError</span><span class="p">:(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span>
 
-<span class="c1">//websocket状态回调，可忽略
-</span><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">manager</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
+<span class="c1">//websocket状态回调，可忽略</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">manager</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
 <span class="nf">onWebSocketState</span><span class="p">:(</span><span class="n"><a href="Enums/SDSocketState.html">SDSocketState</a></span><span class="p">)</span><span class="nv">state</span><span class="p">;</span>
 
-<span class="c1">//直播/点播场景下，外部传入的token认证失败的错误
-</span><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">manager</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
+<span class="c1">//直播/点播场景下，外部传入的token认证失败的错误</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">manager</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
     <span class="nf">authOnError</span><span class="p">:(</span><span class="n">NSError</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span>
 
 <span class="cm">/**
@@ -417,8 +501,8 @@
                               <span class="nf">event</span><span class="p">:(</span><span class="n"><a href="Enums/SDLiveRoomPeopleEvent.html">SDLiveRoomPeopleEvent</a></span><span class="p">)</span><span class="nv">event</span>
                                <span class="nf">info</span><span class="p">:(</span><span class="n">NSDictionary</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">info</span><span class="p">;</span>
 
-<span class="c1">//收到教师端发起的随堂考事件
-</span><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">managerLive</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
+<span class="c1">//收到教师端发起的随堂考事件</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">managerLive</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
  <span class="nf">beginExamWithPaper</span><span class="p">:(</span><span class="n"><a href="Classes/SDLivePaperModel.html">SDLivePaperModel</a></span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">paper</span><span class="p">;</span>
 
 
@@ -440,10 +524,64 @@
 <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">manager</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
 <span class="nf">didChangeStreamUrl</span><span class="p">:(</span><span class="n"><a href="Type%20Definitions/UrlSteamType.html">UrlSteamType</a></span><span class="p">)</span><span class="nv">type</span><span class="p">;</span>
 
-<span class="c1">//事件信息,暂时忽略
-</span><span class="k">@optional</span>
-<span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">manager</span><span class="o">:</span><span class="p">(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">manager</span>
-          <span class="n">event</span><span class="o">:</span><span class="p">(</span><span class="n">id</span> <span class="n">_Nullable</span><span class="p">)</span><span class="n">event</span><span class="p">;</span>
+<span class="c1">/// 商品推广消息【该方法仅在直播下触发】</span>
+<span class="c1">/// @param manager SDLiveManager</span>
+<span class="c1">/// @param goods 商品数组,element为nsdictionary，包含id、name、pictureUrl、locateUrl等key</span>
+<span class="c1">/// @param operate 0 开启推广，1 关闭推广</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">manager</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
+<span class="nf">didReceiveGoods</span><span class="p">:(</span> <span class="n">NSArray</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">goods</span>
+       <span class="nf">operate</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">operate</span><span class="p">;</span>
+
+<span class="c1">/// 商品推广消息【该方法仅在点播下触发】</span>
+<span class="c1">/// @param manager SDLiveManager</span>
+<span class="c1">/// @param originGoodsInfo 字典数组</span>
+<span class="cm">/** originGoodsInfo 结构如下
+  (
+  {
+      data =     (
+                  {
+              id = 19;
+              locateUrl = "http://cn.bing.com";
+              name = name3;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa3";
+          },
+                  {
+              id = 20;
+              locateUrl = "http://cn.bing.com";
+              name = name4;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa4";
+          }
+      );
+      lSequence = 1581942366849;
+      operate = 1;
+  },
+  {
+      data =     (
+                  {
+              id = 19;
+              locateUrl = "http://cn.bing.com";
+              name = name3;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa3";
+          },
+                  {
+              id = 20;
+              locateUrl = "http://cn.bing.com";
+              name = name4;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa4";
+          }
+      );
+      lSequence = 1581942499606;
+      operate = 0;
+  }
+  )
+ */</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">manager</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
+<span class="nf">didReceiveOriginGoodsInfo</span><span class="p">:(</span> <span class="n">NSArray</span><span class="o">*</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">originGoodsInfo</span><span class="p">;</span>
+
+<span class="c1">//事件信息,暂时忽略</span>
+<span class="k">@optional</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">manager</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
+          <span class="nf">event</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">event</span><span class="p">;</span>
 
 
 <span class="cm">/**
@@ -456,7 +594,7 @@
  */</span>
 <span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">manager</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveManager.html">SDLiveManager</a></span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">manager</span>
     <span class="nf">didChangeImageStatus</span><span class="p">:(</span><span class="n"><a href="Enums/SDLiveImageLoadStatus.html">SDLiveImageLoadStatus</a></span><span class="p">)</span><span class="nv">status</span><span class="p">;</span>
-
+ 
 <span class="k">@end</span></code></pre>
 
                         </div>
@@ -606,7 +744,7 @@
  
  @param response 消息体
  */</span>
-<span class="o">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didReceiveResponse</span><span class="o">:</span><span class="p">(</span><span class="n">SDLiveIMResponse</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">response</span><span class="p">;</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didReceiveResponse</span><span class="p">:(</span><span class="n">SDLiveIMResponse</span><span class="o">*</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">response</span><span class="p">;</span>
 
 <span class="k">@end</span></code></pre>
 
@@ -626,7 +764,7 @@
         </section>
         <section id="footer">
           <p>2019@Sunland</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

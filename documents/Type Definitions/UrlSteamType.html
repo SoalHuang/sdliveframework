@@ -14,7 +14,7 @@
     <a title="UrlSteamType Type Definition Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SDLiveProject 1.0.5 Docs</a> (29% documented)</p>
+        <p><a href="../index.html">SDLiveProject 1.1.5 Docs</a> (27% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -46,6 +46,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/SDLiveDownloadManager.html">SDLiveDownloadManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SDLiveEnvironment.html">SDLiveEnvironment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SDLiveEnvironmentService.html">SDLiveEnvironmentService</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/SDLiveError.html">SDLiveError</a>
@@ -98,10 +104,16 @@
                 <a href="../Constants.html#/c:SDLiveDownloadManager.h@SDLiveDownloadErrorDomain">SDLiveDownloadErrorDomain</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SDLiveErrorDomain">SDLiveErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Constants.html#/c:@SDLiveProjectVersionNumber">SDLiveProjectVersionNumber</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:@SDLiveProjectVersionString">SDLiveProjectVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SDLiveServerErrorDomain">SDLiveServerErrorDomain</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:SDLiveDownloadManager.h@SunliveDownloadIdentifier">SunliveDownloadIdentifier</a>
@@ -165,6 +177,9 @@
                 <a href="../Protocols/SDLiveDownloadManagerDelegate.html">SDLiveDownloadManagerDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/SDLiveEnvironmentProtocol.html">SDLiveEnvironmentProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/SDLiveIMDelegate.html">SDLiveIMDelegate</a>
               </li>
               <li class="nav-group-task">
@@ -192,6 +207,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Type%20Definitions/SDLiveDownloadStatus.html">SDLiveDownloadStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/SDLiveFakeLiveMode.html">SDLiveFakeLiveMode</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Type%20Definitions.html#/c:SDLiveDefine.h@T@SDLiveNumber">SDLiveNumber</a>
@@ -237,12 +255,12 @@
                 <div class="language">
                   <pre class="highlight objective_c"><code><span class="k">typedef</span> <span class="k">enum</span> <span class="o">:</span><span class="n">NSUInteger</span>
 <span class="p">{</span>
-    <span class="c1">//1：老师摄像头
-</span>    <span class="n">UrlSteamTypeTeacher</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="c1">//2：共享桌面
-</span>    <span class="n">UrlSteamTypeComputerDesk</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="c1">//3：共享视频
-</span>    <span class="n">UrlSteamTypeShareVideo</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="c1">//1：老师摄像头</span>
+    <span class="n">UrlSteamTypeTeacher</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="c1">//2：共享桌面</span>
+    <span class="n">UrlSteamTypeComputerDesk</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="c1">//3：共享视频</span>
+    <span class="n">UrlSteamTypeShareVideo</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
 <span class="p">}</span> <span class="n">UrlSteamType</span></code></pre>
 
                 </div>
@@ -276,12 +294,12 @@
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="o">:</span><span class="n">NSUInteger</span>
 <span class="p">{</span>
-    <span class="c1">//1：老师摄像头
-</span>    <span class="n">UrlSteamTypeTeacher</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="c1">//2：共享桌面
-</span>    <span class="n">UrlSteamTypeComputerDesk</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="c1">//3：共享视频
-</span>    <span class="n">UrlSteamTypeShareVideo</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="c1">//1：老师摄像头</span>
+    <span class="n">UrlSteamTypeTeacher</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="c1">//2：共享桌面</span>
+    <span class="n">UrlSteamTypeComputerDesk</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="c1">//3：共享视频</span>
+    <span class="n">UrlSteamTypeShareVideo</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
 <span class="p">}</span></code></pre>
 
                         </div>
@@ -300,7 +318,7 @@
         </section>
         <section id="footer">
           <p>2019@Sunland</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

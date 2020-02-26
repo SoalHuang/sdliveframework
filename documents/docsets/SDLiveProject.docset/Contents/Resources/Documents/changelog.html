@@ -13,7 +13,7 @@
     <a title="ChangeLog  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">SDLiveProject 1.0.5 Docs</a> (29% documented)</p>
+        <p><a href="index.html">SDLiveProject 1.1.5 Docs</a> (27% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -45,6 +45,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SDLiveDownloadManager.html">SDLiveDownloadManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SDLiveEnvironment.html">SDLiveEnvironment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SDLiveEnvironmentService.html">SDLiveEnvironmentService</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SDLiveError.html">SDLiveError</a>
@@ -97,10 +103,16 @@
                 <a href="Constants.html#/c:SDLiveDownloadManager.h@SDLiveDownloadErrorDomain">SDLiveDownloadErrorDomain</a>
               </li>
               <li class="nav-group-task">
+                <a href="Constants.html#/c:@SDLiveErrorDomain">SDLiveErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Constants.html#/c:@SDLiveProjectVersionNumber">SDLiveProjectVersionNumber</a>
               </li>
               <li class="nav-group-task">
                 <a href="Constants.html#/c:@SDLiveProjectVersionString">SDLiveProjectVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@SDLiveServerErrorDomain">SDLiveServerErrorDomain</a>
               </li>
               <li class="nav-group-task">
                 <a href="Constants.html#/c:SDLiveDownloadManager.h@SunliveDownloadIdentifier">SunliveDownloadIdentifier</a>
@@ -164,6 +176,9 @@
                 <a href="Protocols/SDLiveDownloadManagerDelegate.html">SDLiveDownloadManagerDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols/SDLiveEnvironmentProtocol.html">SDLiveEnvironmentProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/SDLiveIMDelegate.html">SDLiveIMDelegate</a>
               </li>
               <li class="nav-group-task">
@@ -191,6 +206,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Type%20Definitions/SDLiveDownloadStatus.html">SDLiveDownloadStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions/SDLiveFakeLiveMode.html">SDLiveFakeLiveMode</a>
               </li>
               <li class="nav-group-task">
                 <a href="Type%20Definitions.html#/c:SDLiveDefine.h@T@SDLiveNumber">SDLiveNumber</a>
@@ -232,7 +250,103 @@
         <section>
           <section class="section">
             
-            <h1 id='1-1-0-2019-11-4' class='heading'>1.1.0 [2019-11-4]</h1>
+            <h1 id='1-1-5-2020-02-20' class='heading'>1.1.5 [2020-02-20]</h1>
+<h4 id='营销推广商品' class='heading'>营销推广商品</h4>
+
+<p>修改方法，添加同步序列</p>
+<pre class="highlight plaintext"><code>/**
+ 时间回调
+
+ @param manager SDLiveManager
+ @param duration 视频总时长
+ @param currentPlayTime 当前播放时长
+ @param cachedDuration 已缓存的视频时长
+ @param sequence 同步序列
+ */
+- (void)manager:(SDLiveManager* _Nonnull)manager
+       duration:(NSTimeInterval)duration
+currentPlayTime:(NSTimeInterval)currentPlayTime
+cacheVideoDuration:(NSTimeInterval)cachedDuration
+       sequence:(NSTimeInterval)sequence;
+</code></pre>
+
+<p>新增方法</p>
+<pre class="highlight plaintext"><code>/// 商品推广消息【该方法仅在直播下触发】
+/// @param manager SDLiveManager
+/// @param goods 商品数组,element为nsdictionary，包含id、name、pictureUrl、locateUrl等key
+/// @param operate 0 开启推广，1 关闭推广
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveGoods:( NSArray* _Nullable)goods
+       operate:(NSInteger)operate;
+
+/// 商品推广消息【该方法仅在点播下触发】
+/// @param manager SDLiveManager
+/// @param originGoodsInfo 字典数组
+/** originGoodsInfo 结构如下
+  (
+  {
+      data =     (
+                  {
+              id = 19;
+              locateUrl = "http://cn.bing.com";
+              name = name3;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa3";
+          },
+                  {
+              id = 20;
+              locateUrl = "http://cn.bing.com";
+              name = name4;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa4";
+          }
+      );
+      lSequence = 1581942366849;
+      operate = 1;
+  },
+  {
+      data =     (
+                  {
+              id = 19;
+              locateUrl = "http://cn.bing.com";
+              name = name3;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa3";
+          },
+                  {
+              id = 20;
+              locateUrl = "http://cn.bing.com";
+              name = name4;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa4";
+          }
+      );
+      lSequence = 1581942499606;
+      operate = 0;
+  }
+  )
+ */
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveOriginGoodsInfo:( NSArray* _Nullable)originGoodsInfo;
+
+</code></pre>
+<h1 id='1-1-4-2019-12-31' class='heading'>1.1.4 [2019-12-31]</h1>
+
+<ol>
+<li>去掉YYmodel 
+# 1.1.3 [2019-12-27]</li>
+<li>伪直播</li>
+<li>新增虎硕环境</li>
+<li>开放环境配置</li>
+</ol>
+<h1 id='1-1-2-2019-12-16' class='heading'>1.1.2 [2019-12-16]</h1>
+
+<ol>
+<li>增加了直播中课件预加载的功能</li>
+<li>增加了H.265的适配</li>
+</ol>
+<h1 id='1-1-1-2019-11-27' class='heading'>1.1.1 [2019-11-27]</h1>
+
+<ol>
+<li>修复了弹幕没有下载的bug</li>
+</ol>
+<h1 id='1-1-0-2019-11-4' class='heading'>1.1.0 [2019-11-4]</h1>
 
 <ol>
 <li>重构了离线下载部分</li>
@@ -467,10 +581,10 @@ SDLiveManager.setConfigType(SDLiveConfig.develop)
 </code></pre>
 
 <p>SDLiveManager添加属性</p>
-<pre class="highlight objective_c"><code><span class="c1">//课件区域的占位图，当课件图片在加载中的时候展示该图片，使用 UIViewContentModeCenter 模式来展示，默认已经添加了占位图。
-</span><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">strong</span><span class="p">)</span> <span class="n">UIImage</span><span class="o">*</span> <span class="n">pageViewPlaceHolderImage</span><span class="p">;</span>
-<span class="err">拉流的</span><span class="n">tcp</span><span class="err">速度，“</span><span class="mi">20</span><span class="n">KB</span><span class="o">/</span><span class="n">s</span><span class="err">”</span>
-<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span><span class="o">*</span> <span class="n">tcpSpeed</span><span class="p">;</span>
+<pre class="highlight plaintext"><code>//课件区域的占位图，当课件图片在加载中的时候展示该图片，使用 UIViewContentModeCenter 模式来展示，默认已经添加了占位图。
+@property (nonatomic,strong) UIImage* pageViewPlaceHolderImage;
+拉流的tcp速度，“20KB/s”
+@property (nonatomic,strong, readonly) NSString* tcpSpeed;
 </code></pre>
 
 <p>IM的心跳间隔改为20秒</p>
@@ -479,7 +593,7 @@ SDLiveManager.setConfigType(SDLiveConfig.develop)
         </section>
         <section id="footer">
           <p>2019@Sunland</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

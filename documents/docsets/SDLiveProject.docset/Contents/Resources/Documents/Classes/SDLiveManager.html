@@ -14,7 +14,7 @@
     <a title="SDLiveManager Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">SDLiveProject 1.0.5 Docs</a> (29% documented)</p>
+        <p><a href="../index.html">SDLiveProject 1.1.5 Docs</a> (27% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -46,6 +46,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/SDLiveDownloadManager.html">SDLiveDownloadManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SDLiveEnvironment.html">SDLiveEnvironment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SDLiveEnvironmentService.html">SDLiveEnvironmentService</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/SDLiveError.html">SDLiveError</a>
@@ -98,10 +104,16 @@
                 <a href="../Constants.html#/c:SDLiveDownloadManager.h@SDLiveDownloadErrorDomain">SDLiveDownloadErrorDomain</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SDLiveErrorDomain">SDLiveErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Constants.html#/c:@SDLiveProjectVersionNumber">SDLiveProjectVersionNumber</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:@SDLiveProjectVersionString">SDLiveProjectVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SDLiveServerErrorDomain">SDLiveServerErrorDomain</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:SDLiveDownloadManager.h@SunliveDownloadIdentifier">SunliveDownloadIdentifier</a>
@@ -165,6 +177,9 @@
                 <a href="../Protocols/SDLiveDownloadManagerDelegate.html">SDLiveDownloadManagerDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/SDLiveEnvironmentProtocol.html">SDLiveEnvironmentProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/SDLiveIMDelegate.html">SDLiveIMDelegate</a>
               </li>
               <li class="nav-group-task">
@@ -192,6 +207,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Type%20Definitions/SDLiveDownloadStatus.html">SDLiveDownloadStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions/SDLiveFakeLiveMode.html">SDLiveFakeLiveMode</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Type%20Definitions.html#/c:SDLiveDefine.h@T@SDLiveNumber">SDLiveNumber</a>
@@ -1009,9 +1027,11 @@
               <div class="task-name-container">
                 <a name="/%E6%92%AD%E6%94%BE%E5%99%A8%E6%8E%A7%E5%88%B6%E6%96%B9%E6%B3%95"></a>
                 <a name="//apple_ref/objc/Section/播放器控制方法" class="dashAnchor"></a>
-                <a href="#/%E6%92%AD%E6%94%BE%E5%99%A8%E6%8E%A7%E5%88%B6%E6%96%B9%E6%B3%95">
-                  <h3 class="section-name">播放器控制方法</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/%E6%92%AD%E6%94%BE%E5%99%A8%E6%8E%A7%E5%88%B6%E6%96%B9%E6%B3%95"></a>
+                  <h3 class="section-name"><p>播放器控制方法</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -1246,9 +1266,11 @@
               <div class="task-name-container">
                 <a name="/%E5%BC%B9%E5%B9%95"></a>
                 <a name="//apple_ref/objc/Section/弹幕" class="dashAnchor"></a>
-                <a href="#/%E5%BC%B9%E5%B9%95">
-                  <h3 class="section-name">弹幕</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/%E5%BC%B9%E5%B9%95"></a>
+                  <h3 class="section-name"><p>弹幕</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -1372,9 +1394,11 @@
               <div class="task-name-container">
                 <a name="/%E7%8E%AF%E5%A2%83"></a>
                 <a name="//apple_ref/objc/Section/环境" class="dashAnchor"></a>
-                <a href="#/%E7%8E%AF%E5%A2%83">
-                  <h3 class="section-name">环境</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/%E7%8E%AF%E5%A2%83"></a>
+                  <h3 class="section-name"><p>环境</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -1428,13 +1452,45 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SDLiveManager(cm)cleanImageCache"></a>
+                    <a name="//apple_ref/objc/Method/+cleanImageCache" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SDLiveManager(cm)cleanImageCache">+cleanImageCache</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">cleanImageCache</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">cleanImageCache</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
           <p>2019@Sunland</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

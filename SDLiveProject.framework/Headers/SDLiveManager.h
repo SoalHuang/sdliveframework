@@ -35,11 +35,13 @@
  @param duration 视频总时长
  @param currentPlayTime 当前播放时长
  @param cachedDuration 已缓存的视频时长
+ @param sequence 同步序列
  */
 - (void)manager:(SDLiveManager* _Nonnull)manager
        duration:(NSTimeInterval)duration
 currentPlayTime:(NSTimeInterval)currentPlayTime
-cacheVideoDuration:(NSTimeInterval)cachedDuration;
+cacheVideoDuration:(NSTimeInterval)cachedDuration
+       sequence:(NSTimeInterval)sequence;
 
 /**
  播放器状态回调
@@ -130,6 +132,60 @@ onWebSocketState:(SDSocketState)state;
 - (void)manager:(SDLiveManager* _Nonnull)manager
 didChangeStreamUrl:(UrlSteamType)type;
 
+/// 商品推广消息【该方法仅在直播下触发】
+/// @param manager SDLiveManager
+/// @param goods 商品数组,element为nsdictionary，包含id、name、pictureUrl、locateUrl等key
+/// @param operate 0 开启推广，1 关闭推广
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveGoods:( NSArray* _Nullable)goods
+       operate:(NSInteger)operate;
+
+/// 商品推广消息【该方法仅在点播下触发】
+/// @param manager SDLiveManager
+/// @param originGoodsInfo 字典数组
+/** originGoodsInfo 结构如下
+  (
+  {
+      data =     (
+                  {
+              id = 19;
+              locateUrl = "http://cn.bing.com";
+              name = name3;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa3";
+          },
+                  {
+              id = 20;
+              locateUrl = "http://cn.bing.com";
+              name = name4;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa4";
+          }
+      );
+      lSequence = 1581942366849;
+      operate = 1;
+  },
+  {
+      data =     (
+                  {
+              id = 19;
+              locateUrl = "http://cn.bing.com";
+              name = name3;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa3";
+          },
+                  {
+              id = 20;
+              locateUrl = "http://cn.bing.com";
+              name = name4;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa4";
+          }
+      );
+      lSequence = 1581942499606;
+      operate = 0;
+  }
+  )
+ */
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveOriginGoodsInfo:( NSArray* _Nullable)originGoodsInfo;
+
 //事件信息,暂时忽略
 @optional
 - (void)manager:(SDLiveManager* _Nonnull)manager
@@ -146,7 +202,7 @@ didChangeStreamUrl:(UrlSteamType)type;
  */
 -(void)manager:(SDLiveManager* _Nonnull)manager
     didChangeImageStatus:(SDLiveImageLoadStatus)status;
-
+ 
 @end
 
 @protocol SDLiveIMDelegate

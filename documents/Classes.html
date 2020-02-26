@@ -14,7 +14,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">SDLiveProject 1.0.5 Docs</a> (29% documented)</p>
+        <p><a href="index.html">SDLiveProject 1.1.5 Docs</a> (27% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -46,6 +46,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SDLiveDownloadManager.html">SDLiveDownloadManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SDLiveEnvironment.html">SDLiveEnvironment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SDLiveEnvironmentService.html">SDLiveEnvironmentService</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SDLiveError.html">SDLiveError</a>
@@ -98,10 +104,16 @@
                 <a href="Constants.html#/c:SDLiveDownloadManager.h@SDLiveDownloadErrorDomain">SDLiveDownloadErrorDomain</a>
               </li>
               <li class="nav-group-task">
+                <a href="Constants.html#/c:@SDLiveErrorDomain">SDLiveErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Constants.html#/c:@SDLiveProjectVersionNumber">SDLiveProjectVersionNumber</a>
               </li>
               <li class="nav-group-task">
                 <a href="Constants.html#/c:@SDLiveProjectVersionString">SDLiveProjectVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@SDLiveServerErrorDomain">SDLiveServerErrorDomain</a>
               </li>
               <li class="nav-group-task">
                 <a href="Constants.html#/c:SDLiveDownloadManager.h@SunliveDownloadIdentifier">SunliveDownloadIdentifier</a>
@@ -165,6 +177,9 @@
                 <a href="Protocols/SDLiveDownloadManagerDelegate.html">SDLiveDownloadManagerDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols/SDLiveEnvironmentProtocol.html">SDLiveEnvironmentProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/SDLiveIMDelegate.html">SDLiveIMDelegate</a>
               </li>
               <li class="nav-group-task">
@@ -192,6 +207,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Type%20Definitions/SDLiveDownloadStatus.html">SDLiveDownloadStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions/SDLiveFakeLiveMode.html">SDLiveFakeLiveMode</a>
               </li>
               <li class="nav-group-task">
                 <a href="Type%20Definitions.html#/c:SDLiveDefine.h@T@SDLiveNumber">SDLiveNumber</a>
@@ -272,10 +290,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -331,10 +345,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -362,52 +372,52 @@
 
 <span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">shared</span><span class="p">;</span>
 
-<span class="c1">/// 尚直播下载方法
-/// 下载直播间视频，如果该直播间正在下载中，或者已经下载完毕，或者传入参数错误，则会返回错误
-/// @param roomId 直播间ID
-/// @param token token
-/// @param channelCode channelCode
-</span><span class="k">-</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span><span class="p">)</span><span class="nf">downloadWith</span><span class="p">:(</span><span class="n">NSInteger</span> <span class="p">)</span><span class="nv">roomId</span>
+<span class="c1">/// 尚直播下载方法</span>
+<span class="c1">/// 下载直播间视频，如果该直播间正在下载中，或者已经下载完毕，或者传入参数错误，则会返回错误</span>
+<span class="c1">/// @param roomId 直播间ID</span>
+<span class="c1">/// @param token token</span>
+<span class="c1">/// @param channelCode channelCode</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span><span class="p">)</span><span class="nf">downloadWith</span><span class="p">:(</span><span class="n">NSInteger</span> <span class="p">)</span><span class="nv">roomId</span>
            <span class="nf">withToken</span><span class="p">:</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">token</span>
           <span class="nf">andChannelCode</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">channelCode</span><span class="p">;</span>
 
-<span class="c1">/// 平台化下载方法
-/// 下载直播间视频，如果该直播间正在下载中，或者已经下载完毕，或者传入参数错误，则会返回错误
-/// @param model SDLiveLoginInfoModel
-</span><span class="k">-</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span><span class="p">)</span><span class="nf">downloadWithPlatInfo</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveLoginInfoModel.html">SDLiveLoginInfoModel</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">model</span><span class="p">;</span>
+<span class="c1">/// 平台化下载方法</span>
+<span class="c1">/// 下载直播间视频，如果该直播间正在下载中，或者已经下载完毕，或者传入参数错误，则会返回错误</span>
+<span class="c1">/// @param model SDLiveLoginInfoModel</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSError</span><span class="o">*</span><span class="p">)</span><span class="nf">downloadWithPlatInfo</span><span class="p">:(</span><span class="n"><a href="Classes/SDLiveLoginInfoModel.html">SDLiveLoginInfoModel</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">model</span><span class="p">;</span>
   
-<span class="c1">/// 暂停下载，如传入的roomId不在下载列表里，不会做任何操作；
-/// 对下载已经完毕或者被暂停不生效
-/// @param roomId 直播间ID
-</span><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">pauseWithRoomId</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">roomId</span><span class="p">;</span>
+<span class="c1">/// 暂停下载，如传入的roomId不在下载列表里，不会做任何操作；</span>
+<span class="c1">/// 对下载已经完毕或者被暂停不生效</span>
+<span class="c1">/// @param roomId 直播间ID</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">pauseWithRoomId</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">roomId</span><span class="p">;</span>
 
-<span class="c1">/// 恢复下载，如传入的roomId不在下载列表里，不会做任何操作
-/// 对下载已经完毕或者被暂停不生效
-/// @param roomId 直播间ID
-</span><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">resumeWithRoomId</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">roomId</span><span class="p">;</span>
+<span class="c1">/// 恢复下载，如传入的roomId不在下载列表里，不会做任何操作</span>
+<span class="c1">/// 对下载已经完毕或者被暂停不生效</span>
+<span class="c1">/// @param roomId 直播间ID</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">resumeWithRoomId</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">roomId</span><span class="p">;</span>
 
-<span class="c1">/// 停止下载，如传入的roomId不在下载列表里，不会做任何操作
-/// @param roomId 直播间ID
-</span><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">stopWithRoomId</span><span class="p">:(</span><span class="n">NSInteger</span> <span class="p">)</span><span class="nv">roomId</span><span class="p">;</span>
+<span class="c1">/// 停止下载，如传入的roomId不在下载列表里，不会做任何操作</span>
+<span class="c1">/// @param roomId 直播间ID</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">stopWithRoomId</span><span class="p">:(</span><span class="n">NSInteger</span> <span class="p">)</span><span class="nv">roomId</span><span class="p">;</span>
  
-<span class="c1">/// 删除某个已经完成的下载，可用于清除缓存，如传入的roomId不在下载列表里，不会做任何操作
-/// 仅对下载完毕的下载项生效
-/// @param roomId 直播间ID
-</span><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeCachesWithRoomId</span><span class="p">:(</span><span class="n">NSInteger</span> <span class="p">)</span><span class="nv">roomId</span><span class="p">;</span>
+<span class="c1">/// 删除某个已经完成的下载，可用于清除缓存，如传入的roomId不在下载列表里，不会做任何操作</span>
+<span class="c1">/// 仅对下载完毕的下载项生效</span>
+<span class="c1">/// @param roomId 直播间ID</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeCachesWithRoomId</span><span class="p">:(</span><span class="n">NSInteger</span> <span class="p">)</span><span class="nv">roomId</span><span class="p">;</span>
  
-<span class="c1">/// 获取下载列表
-</span><span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="Classes/SDLiveDownloadItem.html">SDLiveDownloadItem</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="n">getDownloadList</span><span class="p">;</span>
+<span class="c1">/// 获取下载列表</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="Classes/SDLiveDownloadItem.html">SDLiveDownloadItem</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="n">getDownloadList</span><span class="p">;</span>
 
 
-<span class="c1">///  在APPDelegate下的回调 handleEventsForBackgroundURLSession 里添加该方法。
-///  在后台下载完成，app在后台的情况下会触发该回调。
-///
-/// - (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler{
-///    [[SDLiveDownloadManager shared] handleEventsForBackgroundURLSession:identifier completionHandler:completionHandler];
-/// }
-/// @param identifier The identifier of the URL session requiring attention. If your app was just launched, you can use this identifier to create a new NSURLSession object that can receive the events.
-/// @param completionHandler The completion handler to call when you finish processing the events. Calling this completion handler lets the system know that your app’s user interface is updated and a new snapshot can be taken.
-</span><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">handleEventsForBackgroundURLSession</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">identifier</span> <span class="nf">completionHandler</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="kt">void</span><span class="p">))</span><span class="nv">completionHandler</span><span class="p">;</span>
+<span class="c1">///  在APPDelegate下的回调 handleEventsForBackgroundURLSession 里添加该方法。</span>
+<span class="c1">///  在后台下载完成，app在后台的情况下会触发该回调。</span>
+<span class="c1">///</span>
+<span class="c1">/// - (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler{</span>
+<span class="c1">///    [[SDLiveDownloadManager shared] handleEventsForBackgroundURLSession:identifier completionHandler:completionHandler];</span>
+<span class="c1">/// }</span>
+<span class="c1">/// @param identifier The identifier of the URL session requiring attention. If your app was just launched, you can use this identifier to create a new NSURLSession object that can receive the events.</span>
+<span class="c1">/// @param completionHandler The completion handler to call when you finish processing the events. Calling this completion handler lets the system know that your app’s user interface is updated and a new snapshot can be taken.</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">handleEventsForBackgroundURLSession</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">identifier</span> <span class="nf">completionHandler</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="kt">void</span><span class="p">))</span><span class="nv">completionHandler</span><span class="p">;</span>
 <span class="k">@end</span></code></pre>
 
                         </div>
@@ -420,10 +430,96 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SDLiveEnvironment"></a>
+                    <a name="//apple_ref/objc/Class/SDLiveEnvironment" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SDLiveEnvironment">SDLiveEnvironment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Classes/SDLiveEnvironment.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SDLiveEnvironment</span><span class="p">:</span> <span class="nc">NSObject</span><span class="o">&lt;</span><span class="n"><a href="Protocols/SDLiveEnvironmentProtocol.html">SDLiveEnvironmentProtocol</a></span><span class="o">&gt;</span><span class="p">{</span>
+    
+<span class="p">}</span>
+<span class="k">+</span><span class="p">(</span><span class="n">SDLiveEnvironment</span><span class="o">*</span><span class="p">)</span><span class="n">devEnv</span><span class="p">;</span>
+<span class="k">+</span><span class="p">(</span><span class="n">SDLiveEnvironment</span><span class="o">*</span><span class="p">)</span><span class="n">qaEnv</span><span class="p">;</span>
+<span class="c1">//生产环境</span>
+<span class="k">+</span><span class="p">(</span><span class="n">SDLiveEnvironment</span><span class="o">*</span><span class="p">)</span><span class="n">proEnv</span><span class="p">;</span>
+<span class="k">+</span><span class="p">(</span><span class="n">SDLiveEnvironment</span><span class="o">*</span><span class="p">)</span><span class="n">proEnvOfHushuos</span><span class="p">;</span>
+
+<span class="cm">/**
+ 配置环境的便捷方法
+ 
+ @param liveHost 直播域名，如 live.hushuos.com
+ @param videoHost 点播域名，如 video.hushuos.com
+ @param imHost IM服务域名，如 liveim.hushuos.com
+ @return SDLiveEnvironment
+ */</span>
+<span class="k">+</span><span class="p">(</span><span class="n">SDLiveEnvironment</span><span class="o">*</span><span class="p">)</span><span class="nf">customEnvWith</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">liveHost</span> <span class="nf">and</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">videoHost</span> <span class="nf">and</span><span class="p">:(</span><span class="n">NSString</span><span class="o">*</span><span class="p">)</span><span class="nv">imHost</span><span class="p">;</span>
+<span class="k">@end</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SDLiveEnvironment</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/SDLiveEnvironmentProtocol.html">SDLiveEnvironmentProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SDLiveEnvironmentService"></a>
+                    <a name="//apple_ref/objc/Class/SDLiveEnvironmentService" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SDLiveEnvironmentService">SDLiveEnvironmentService</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Classes/SDLiveEnvironmentService.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SDLiveEnvironmentService</span><span class="p">:</span><span class="nc">NSObject</span><span class="p">{</span>
+    
+<span class="p">}</span>
+<span class="k">+</span><span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">shared</span><span class="p">;</span>
+<span class="c1">//环境参数，默认线上环境</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span><span class="n">strong</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="Protocols/SDLiveEnvironmentProtocol.html">SDLiveEnvironmentProtocol</a></span><span class="o">&gt;</span> <span class="n">env</span><span class="p">;</span>
+<span class="k">@end</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SDLiveEnvironmentService</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -474,10 +570,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -522,10 +614,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -585,10 +673,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -665,10 +749,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -702,10 +782,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -753,10 +829,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -790,10 +862,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -838,10 +906,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -885,10 +949,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -925,10 +985,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -952,7 +1008,7 @@
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SDLivePageContainerView</span> <span class="p">:</span> <span class="nc">UIView</span><span class="o">&lt;</span><span class="n">SDLivePageViewDelegate</span><span class="o">&gt;</span>
 
-<span class="o">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">scroll</span><span class="o">:</span><span class="p">(</span><span class="n">SDLiveScrollModel</span><span class="o">*</span><span class="p">)</span><span class="n">model</span><span class="p">;</span>
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">scroll</span><span class="p">:(</span><span class="n">SDLiveScrollModel</span><span class="o">*</span><span class="p">)</span><span class="nv">model</span><span class="p">;</span>
 
 <span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addPageView</span><span class="p">:(</span><span class="n">SDLivePageView</span><span class="o">*</span><span class="p">)</span><span class="nv">pageView</span><span class="p">;</span>
 
@@ -968,10 +1024,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -1005,10 +1057,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -1142,10 +1190,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -1185,7 +1229,7 @@
         </section>
         <section id="footer">
           <p>2019@Sunland</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

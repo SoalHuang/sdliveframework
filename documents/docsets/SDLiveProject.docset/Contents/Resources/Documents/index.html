@@ -13,7 +13,7 @@
     <a title="SDLiveProject  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">SDLiveProject 1.0.5 Docs</a> (29% documented)</p>
+        <p><a href="index.html">SDLiveProject 1.1.5 Docs</a> (27% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -45,6 +45,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SDLiveDownloadManager.html">SDLiveDownloadManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SDLiveEnvironment.html">SDLiveEnvironment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SDLiveEnvironmentService.html">SDLiveEnvironmentService</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/SDLiveError.html">SDLiveError</a>
@@ -97,10 +103,16 @@
                 <a href="Constants.html#/c:SDLiveDownloadManager.h@SDLiveDownloadErrorDomain">SDLiveDownloadErrorDomain</a>
               </li>
               <li class="nav-group-task">
+                <a href="Constants.html#/c:@SDLiveErrorDomain">SDLiveErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Constants.html#/c:@SDLiveProjectVersionNumber">SDLiveProjectVersionNumber</a>
               </li>
               <li class="nav-group-task">
                 <a href="Constants.html#/c:@SDLiveProjectVersionString">SDLiveProjectVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@SDLiveServerErrorDomain">SDLiveServerErrorDomain</a>
               </li>
               <li class="nav-group-task">
                 <a href="Constants.html#/c:SDLiveDownloadManager.h@SunliveDownloadIdentifier">SunliveDownloadIdentifier</a>
@@ -164,6 +176,9 @@
                 <a href="Protocols/SDLiveDownloadManagerDelegate.html">SDLiveDownloadManagerDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols/SDLiveEnvironmentProtocol.html">SDLiveEnvironmentProtocol</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/SDLiveIMDelegate.html">SDLiveIMDelegate</a>
               </li>
               <li class="nav-group-task">
@@ -191,6 +206,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Type%20Definitions/SDLiveDownloadStatus.html">SDLiveDownloadStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions/SDLiveFakeLiveMode.html">SDLiveFakeLiveMode</a>
               </li>
               <li class="nav-group-task">
                 <a href="Type%20Definitions.html#/c:SDLiveDefine.h@T@SDLiveNumber">SDLiveNumber</a>
@@ -262,9 +280,9 @@
 </code></pre>
 
 <ul>
-<li>平台化版本</li>
+<li>稳定版本</li>
 </ul>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'SDLiveFramework'</span><span class="p">,</span><span class="ss">:git</span><span class="o">=&gt;</span><span class="s1">'https://github.com/jokerYellow/sdliveframework.git'</span><span class="p">,</span><span class="ss">:tag</span><span class="o">=&gt;</span><span class="s1">'1.0.9.6'</span>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'SDLiveFramework'</span><span class="p">,</span><span class="ss">:git</span><span class="o">=&gt;</span><span class="s1">'https://github.com/jokerYellow/sdliveframework.git'</span><span class="p">,</span><span class="ss">:tag</span><span class="o">=&gt;</span><span class="s1">'1.1.5'</span>
 </code></pre>
 
 <blockquote>
@@ -623,12 +641,97 @@ if (error != nil) {
                         startSequence:(SDLiveNumber)startSequence
                           endSequence:(SDLiveNumber)endSequence;
 </code></pre>
+<h4 id='营销推广商品' class='heading'>营销推广商品</h4>
+
+<p>修改方法，添加同步序列</p>
+<pre class="highlight plaintext"><code>/**
+ 时间回调
+
+ @param manager SDLiveManager
+ @param duration 视频总时长
+ @param currentPlayTime 当前播放时长
+ @param cachedDuration 已缓存的视频时长
+ @param sequence 同步序列
+ */
+- (void)manager:(SDLiveManager* _Nonnull)manager
+       duration:(NSTimeInterval)duration
+currentPlayTime:(NSTimeInterval)currentPlayTime
+cacheVideoDuration:(NSTimeInterval)cachedDuration
+       sequence:(NSTimeInterval)sequence;
+</code></pre>
+
+<p>新增方法</p>
+<pre class="highlight plaintext"><code>/// 商品推广消息【该方法仅在直播下触发】
+/// @param manager SDLiveManager
+/// @param goods 商品数组,element为nsdictionary，包含id、name、pictureUrl、locateUrl等key
+/// @param operate 0 开启推广，1 关闭推广
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveGoods:( NSArray* _Nullable)goods
+       operate:(NSInteger)operate;
+
+/// 商品推广消息【该方法仅在点播下触发】
+/// @param manager SDLiveManager
+/// @param originGoodsInfo 字典数组
+/** originGoodsInfo 结构如下
+  (
+  {
+      data =     (
+                  {
+              id = 19;
+              locateUrl = "http://cn.bing.com";
+              name = name3;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa3";
+          },
+                  {
+              id = 20;
+              locateUrl = "http://cn.bing.com";
+              name = name4;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa4";
+          }
+      );
+      lSequence = 1581942366849;
+      operate = 1;
+  },
+  {
+      data =     (
+                  {
+              id = 19;
+              locateUrl = "http://cn.bing.com";
+              name = name3;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa3";
+          },
+                  {
+              id = 20;
+              locateUrl = "http://cn.bing.com";
+              name = name4;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa4";
+          }
+      );
+      lSequence = 1581942499606;
+      operate = 0;
+  }
+  )
+ */
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveOriginGoodsInfo:( NSArray* _Nullable)originGoodsInfo;
+
+</code></pre>
+<h4 id='环境配置' class='heading'>环境配置</h4>
+
+<p>当前有四套默认的环境与自定义环境的时候与SDLiveConfig一一对应，可以通过枚举赋值。</p>
+<pre class="highlight plaintext"><code>+ (void)setConfigType:(SDLiveConfig)type;
+</code></pre>
+
+<p>如要自定义环境，可以实现<code>SDLiveEnvironmentProtocol</code>协议，然后给<code>SDLiveEnvironmentService</code>单例赋值。</p>
+<pre class="highlight plaintext"><code>let env : SDLiveEnvironmentProtocol
+SDLiveEnvironmentService.shared.env = env
+</code></pre>
 
           </section>
         </section>
         <section id="footer">
           <p>2019@Sunland</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

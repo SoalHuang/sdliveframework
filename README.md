@@ -16,20 +16,19 @@ SDLiveProject 是尚直播的 iOS 端 SDK ，可以观看尚直播平台的直�
 
 ## 2.安装
 在 `Podfile` 添加
-
 * 持续获取最新版本
 
 ```ruby
-pod 'SDLiveFramework',:git=>'https://github.com/jokerYellow/sdliveframework.git'
+pod 'SDLiveFramework',:git=>'https://github.com/xingchen-src/sdliveframework.git'
 ```
 
 * 稳定版本 
 
 ```ruby
-pod 'SDLiveFramework',:git=>'https://github.com/jokerYellow/sdliveframework.git',:tag=>'1.1.3'
+pod 'SDLiveFramework',:git=>'https://github.com/xingchen-src/sdliveframework.git',:tag=>'1.1.5'
 ```
-
-> **如果主工程有引入欢拓**，请在安装尚直播之后测试欢拓功能是否正常
+ 
+> **如果主工程有引入欢拓**，请在安装尚直播之后测试欢拓功能是否正常，有问题请联系[尚直播技术人员 huangyaqing@sunlands.com](huangyaqing@sunlands.com)
 
 ## 3.使用方法
 
@@ -256,13 +255,124 @@ cacheVideoDuration:(NSTimeInterval)cachedDuration;
 
 
 ### - 高级功能
+#### 离线播放
+1. 原理
+  - 通过[原生后台下载](https://developer.apple.com/documentation/foundation/url_loading_system/downloading_files_in_the_background)的方式将视频以及事件、图片资源下载到本地。
+  - 下载完毕之后，使用点播方式进行播放即可。如果已经离线完毕，SDK会使用离线数据进行播放，否则使用线上数据。
+2. 开始下载
+  - SDK提供两种方式，一种平台化下载，一种尚直播下载，尚直播的方式在以后会被废弃掉。
+  - 如果该直播正在下载中，或者已经下载完毕，或者传入参数错误，则在初始化的时候会返回错误，可以根据对应的`SUNLAND_SDK_DOWNLOAD_LIVE_ERROR`来处理错误。
+``` objective-c
+  /// 尚直播下载方法 
+  NSError* error = [[SDLiveDownloadManager shared] downloadWith:liveId withToken:self.token.text andChannelCode:self.channelCode.text];
+  if (error != nil) {
+      //handle initial error;
+  }
 
-#### [离线播放](https://github.com/jokerYellow/sdliveframework/wiki/%E7%A6%BB%E7%BA%BF%E4%B8%8B%E8%BD%BD)
+  /// 平台化下载方法 
+  NSError* error = [[SDLiveDownloadManager shared] downloadWithPlatInfo:model];
+  if (error != nil) {
+    //handle initial error;
+  }
+```
+3. ⚠️注意的点, 在`APPDelegate`下的回调`handleEventsForBackgroundURLSession` 里添加该方法。
+
+```objective-c
+ - (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler{
+    [[SDLiveDownloadManager shared] handleEventsForBackgroundURLSession:identifier completionHandler:completionHandler];
+ }
+```
+
+4. 操作方法
+  * 暂停
+  
+  ```objective-c
+  /// 暂停下载，如传入的roomId不在下载列表里，不会做任何操作；
+/// 对下载已经完毕或者被暂停不生效
+/// @param roomId 直播间ID
+- (void)pauseWithRoomId:(NSInteger)roomId;
+  ```
+  * 恢复
+```objective-c
+/// 恢复下载，如传入的roomId不在下载列表里，不会做任何操作
+/// 对下载已经完毕或者被暂停不生效
+/// @param roomId 直播间ID
+- (void)resumeWithRoomId:(NSInteger)roomId;
+```
+* 停止
+```objective-c
+/// 停止下载，如传入的roomId不在下载列表里，不会做任何操作
+/// @param roomId 直播间ID
+- (void)stopWithRoomId:(NSInteger )roomId;
+ ```
+* 可以删除掉已经下载完毕的直播
+ ```objective-c
+/// 删除某个已经完成的下载，可用于清除缓存，如传入的roomId不在下载列表里，不会做任何操作
+/// 仅对下载完毕的下载项生效
+/// @param roomId 直播间ID
+- (void)removeCachesWithRoomId:(NSInteger )roomId;
+```
+
+* 获取下载列表，`SDLiveDownloadItem`包含下载状态以及直播间等信息
+```objective-c
+/// 获取下载列表
+- (NSArray<SDLiveDownloadItem *> *)getDownloadList;
+```
+
+离线播放代理
+
+```objective-c
+/**
+ 下载代理
+ */
+@protocol SDLiveDownloadManagerDelegate <NSObject>
+/// 下载认证失败
+/// @param manager
+/// @param roomId 直播间ID
+/// @param error 错误信息
+- (void)downloadManager:(SDLiveDownloadManager *_Nonnull)manager
+                   roomId:(NSInteger)roomId
+    authorizationFailed:(NSError *_Nullable)error;
+
+/// 开始下载
+/// @param manager
+/// @param roomId 直播间ID
+- (void)downloadManager:(SDLiveDownloadManager *_Nonnull)manager
+      beginDownloadRoomId:(NSInteger)roomId;
+  
+/// 下载进度变化
+/// @param manager SDLiveDownloadManager
+/// @param roomId 直播间ID
+/// @param downloadSize 已经下载的比特数
+/// @param totalSize 该直播间总共比特数
+- (void)downloadManager:(SDLiveDownloadManager *_Nonnull)manager
+                   roomId:(NSInteger)roomId
+         progressChange:(NSInteger)downloadSize
+              totalSize:(NSInteger)totalSize;
+
+/// 下载过程中发生错误
+/// @param manager SDLiveDownloadManager
+/// @param roomId 直播间ID
+/// @param error 错误信息
+- (void)downloadManager:(SDLiveDownloadManager *_Nonnull)manager
+                   roomId:(NSInteger)roomId
+          errorOccurred:(NSError *_Nullable)error;
+  
+/// 下载完成
+/// @param manager SDLiveDownloadManager
+/// @param roomId 直播间ID
+/// @param error 下载完成时可能出现的错误信息
+- (void)downloadManager:(SDLiveDownloadManager *_Nonnull)manager
+                   roomId:(NSInteger)roomId
+               complete:(NSError *_Nullable)error;
+
+@end
+```
 
 #### 获取音频文件链接
 SDLiveAudioService 类提供音频下载方法
    
-```
+```objective-c
 /**
  平台化音频下载
 
@@ -277,7 +387,7 @@ SDLiveAudioService 类提供音频下载方法
 
 #### 平台化碎片化初始化方式
 
-```
+```objective-c
 /**
  平台化业务方碎片化视频初始化
  @param model SDLiveLoginInfoModel
@@ -293,4 +403,89 @@ SDLiveAudioService 类提供音频下载方法
                         startSequence:(SDLiveNumber)startSequence
                           endSequence:(SDLiveNumber)endSequence;
 ```
+#### 营销推广商品
+修改方法，添加同步序列
+````
+/**
+ 时间回调
 
+ @param manager SDLiveManager
+ @param duration 视频总时长
+ @param currentPlayTime 当前播放时长
+ @param cachedDuration 已缓存的视频时长
+ @param sequence 同步序列
+ */
+- (void)manager:(SDLiveManager* _Nonnull)manager
+       duration:(NSTimeInterval)duration
+currentPlayTime:(NSTimeInterval)currentPlayTime
+cacheVideoDuration:(NSTimeInterval)cachedDuration
+       sequence:(NSTimeInterval)sequence;
+````
+新增方法
+````
+/// 商品推广消息【该方法仅在直播下触发】
+/// @param manager SDLiveManager
+/// @param goods 商品数组,element为nsdictionary，包含id、name、pictureUrl、locateUrl等key
+/// @param operate 0 开启推广，1 关闭推广
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveGoods:( NSArray* _Nullable)goods
+       operate:(NSInteger)operate;
+
+/// 商品推广消息【该方法仅在点播下触发】
+/// @param manager SDLiveManager
+/// @param originGoodsInfo 字典数组
+/** originGoodsInfo 结构如下
+  (
+  {
+      data =     (
+                  {
+              id = 19;
+              locateUrl = "http://cn.bing.com";
+              name = name3;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa3";
+          },
+                  {
+              id = 20;
+              locateUrl = "http://cn.bing.com";
+              name = name4;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa4";
+          }
+      );
+      lSequence = 1581942366849;
+      operate = 1;
+  },
+  {
+      data =     (
+                  {
+              id = 19;
+              locateUrl = "http://cn.bing.com";
+              name = name3;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa3";
+          },
+                  {
+              id = 20;
+              locateUrl = "http://cn.bing.com";
+              name = name4;
+              pictureUrl = "https://test-sfs-public.shangdejigou.cn/SunlivePromote/aaa4";
+          }
+      );
+      lSequence = 1581942499606;
+      operate = 0;
+  }
+  )
+ */
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveOriginGoodsInfo:( NSArray* _Nullable)originGoodsInfo;
+
+````
+
+#### 环境配置
+当前有四套默认的环境与自定义环境的时候与SDLiveConfig一一对应，可以通过枚举赋值。
+````objective-c
++ (void)setConfigType:(SDLiveConfig)type;
+````
+如要自定义环境，可以实现`SDLiveEnvironmentProtocol`协议，然后给`SDLiveEnvironmentService`单例赋值。
+````Swift
+let env : SDLiveEnvironmentProtocol
+SDLiveEnvironmentService.shared.env = env
+````
