@@ -186,6 +186,41 @@ didReceiveGoods:( NSArray* _Nullable)goods
 -(void)manager:(SDLiveManager* _Nonnull)manager
 didReceiveOriginGoodsInfo:( NSArray* _Nullable)originGoodsInfo;
 
+/// 开始抽奖通知
+/// @param manager SDLiveManager
+/// @param name 奖品名称
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveStartRaffle:( NSString* _Nullable)name;
+
+/// 学员端抽奖结果通知
+/// @param manager SDLiveManager
+/// @param name 奖品名称
+/// @param isSelf 自己是否是中奖用户
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveEndRaffle:( NSString* _Nullable)name
+winner:(BOOL)isSelf;
+
+///  发给学员的答题信息
+/// @param manager SDLiveManager
+/// @param questiontype 题目类型。1-单选 2-多选",
+/// @param lSequence 请求毫秒级时间戳
+/// @param optionCount 选项个数(2-5)",
+/// @param answer 排好序的答案ABC..., 无答案传空串
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveQuestionType:(NSNumber* _Nonnull)questiontype
+      sequence:(NSNumber* _Nonnull)lSequence
+   optionCount:(NSNumber* _Nonnull)optionCount
+        answer:(NSString* _Nonnull)answer;
+
+
+/// 向学生推送停止作答信息
+/// @param manager SDLiveManager
+/// @param reason 停止原因。0-正常结束 1-中途取消
+/// @param lSequence 同步序列
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveQuestionEndReason:(NSNumber* _Nonnull)reason
+      sequence:(NSNumber* _Nonnull)lSequence;
+
 //事件信息,暂时忽略
 @optional
 - (void)manager:(SDLiveManager* _Nonnull)manager
@@ -515,6 +550,14 @@ didReceiveOriginGoodsInfo:( NSArray* _Nullable)originGoodsInfo;
  重新走一遍登录流程、开始播放视频，当视频出现问题的时候，可以使用该方法
  */
 - (void)reStart;
+
+#pragma mark - send CMD
+
+///  发送答题答案
+/// @param answer 答案，为排好序的字符串，如"BC"
+/// @param lSequence 时间戳
+- (void)sendQuestionAnser:(NSString* _Nonnull)answer sequence: (NSNumber *_Nonnull)lSequence;
+
 
 #pragma mark 环境
 

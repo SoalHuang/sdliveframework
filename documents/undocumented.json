@@ -1,10 +1,521 @@
 {
   "warnings": [
     {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLPrompView.h",
+      "line": 13,
+      "symbol": "SDLPrompView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLPrompView.h",
+      "line": 15,
+      "symbol": "SDLPrompView.-setLodingImgName:info:isAnim:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveAnnouncementView.h",
+      "line": 15,
+      "symbol": "SDLiveAnnouncementView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveAnnouncementView.h",
+      "line": 17,
+      "symbol": "SDLiveAnnouncementView.closeBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveAnnouncementView.h",
+      "line": 19,
+      "symbol": "SDLiveAnnouncementView.-receiveAnnounce:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveAnnouncementView.h",
+      "line": 21,
+      "symbol": "SDLiveAnnouncementView.-orientationChange:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveAnserQuestionCollectionViewCell.h",
+      "line": 12,
+      "symbol": "SDLiveAnserQuestionCollectionViewCell",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveAnserQuestionCollectionViewCell.h",
+      "line": 14,
+      "symbol": "SDLiveAnserQuestionCollectionViewCell.contentLabl",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveAnserQuestionView.h",
+      "line": 13,
+      "symbol": "SDLiveAnserQuestionViewBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveAnserQuestionView.h",
+      "line": 16,
+      "symbol": "SDLiveAnserQuestionView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveAnserQuestionView.h",
+      "line": 17,
+      "symbol": "SDLiveAnserQuestionView.submitBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveAnserQuestionView.h",
+      "line": 18,
+      "symbol": "SDLiveAnserQuestionView.closeBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveAnserQuestionView.h",
+      "line": 20,
+      "symbol": "SDLiveAnserQuestionView.-initWithType:optionCount:answer:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveAudioService.h",
       "line": 13,
       "symbol": "SDLiveAudioServiceBlock",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveBigResponseView.h",
+      "line": 12,
+      "symbol": "SDLiveBigResponseViewDelegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveBigResponseView.h",
+      "line": 15,
+      "symbol": "SDLiveBigResponseViewDelegate.-responseEnd",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveBigResponseView.h",
+      "line": 18,
+      "symbol": "SDLiveBigResponseView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveBigResponseView.h",
+      "line": 20,
+      "symbol": "SDLiveBigResponseView.delegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveChatFullTableViewCell.h",
+      "line": 13,
+      "symbol": "SDLiveChatFullTableViewCell",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveChatFullTableViewCell.h",
+      "line": 15,
+      "symbol": "SDLiveChatFullTableViewCell.-fullChatWithmessageModel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveChatLeftTableViewCell.h",
+      "line": 13,
+      "symbol": "SDLiveChatLeftTableViewCell",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveChatLeftTableViewCell.h",
+      "line": 15,
+      "symbol": "SDLiveChatLeftTableViewCell.-setCellContentEntity:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveChatRightTableViewCell.h",
+      "line": 13,
+      "symbol": "SDLiveChatRightTableViewCell",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveChatRightTableViewCell.h",
+      "line": 14,
+      "symbol": "SDLiveChatRightTableViewCell.-setCellContentEntity:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveChatView.h",
+      "line": 15,
+      "symbol": "SDLiveChatViewDelegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveChatView.h",
+      "line": 18,
+      "symbol": "SDLiveChatViewDelegate.-hitChatView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveChatView.h",
+      "line": 28,
+      "symbol": "SDLiveChatView.delegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 16,
+      "symbol": "SDLCoverViewHiddenClosures",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 19,
+      "symbol": "SDLiveConverView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 22,
+      "symbol": "SDLiveConverView.menuView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 25,
+      "symbol": "SDLiveConverView.statusBarBackview",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 27,
+      "symbol": "SDLiveConverView.navigationView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 28,
+      "symbol": "SDLiveConverView.backButton",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 29,
+      "symbol": "SDLiveConverView.titlLabel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 36,
+      "symbol": "SDLiveConverView.voiceControlV",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 37,
+      "symbol": "SDLiveConverView.voiceControlBut",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 38,
+      "symbol": "SDLiveConverView.voiceControlSlider",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 41,
+      "symbol": "SDLiveConverView.isLiving",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 43,
+      "symbol": "SDLiveConverView.-startCoverViewTimerHidden",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 45,
+      "symbol": "SDLiveConverView.-closeVisibleCoverViewTimer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 47,
+      "symbol": "SDLiveConverView.-hiddenCoverView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 49,
+      "symbol": "SDLiveConverView.-visibleCoverView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveConverView.h",
+      "line": 52,
+      "symbol": "SDLiveConverView.-changeViewOrientation:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController+playEvent.h",
+      "line": 17,
+      "symbol": "SDLiveDefaultPlayerViewController(playEvent)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController+playEvent.h",
+      "line": 43,
+      "symbol": "SDLiveDefaultPlayerViewController.-manager:loadState:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController+playEvent.h",
+      "line": 48,
+      "symbol": "SDLiveDefaultPlayerViewController.-manager:onPlayError:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController+playEvent.h",
+      "line": 52,
+      "symbol": "SDLiveDefaultPlayerViewController.-manager:onWebSocketState:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController+playEvent.h",
+      "line": 56,
+      "symbol": "SDLiveDefaultPlayerViewController.-manager:authOnError:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController+playEvent.h",
+      "line": 100,
+      "symbol": "SDLiveDefaultPlayerViewController.-managerLive:beginExamWithPaper:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController+playEvent.h",
+      "line": 178,
+      "symbol": "SDLiveDefaultPlayerViewController.-manager:event:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 23,
+      "symbol": "SDLiveDefaultPlayerViewControllerDelegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 35,
+      "symbol": "SDLiveDefaultPlayerViewController.delegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 37,
+      "symbol": "SDLiveDefaultPlayerViewController.isFirstLogin",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 38,
+      "symbol": "SDLiveDefaultPlayerViewController.videoType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 41,
+      "symbol": "SDLiveDefaultPlayerViewController.isLiving",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 43,
+      "symbol": "SDLiveDefaultPlayerViewController.type",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 45,
+      "symbol": "SDLiveDefaultPlayerViewController.liveManager",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 48,
+      "symbol": "SDLiveDefaultPlayerViewController.userModel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 56,
+      "symbol": "SDLiveDefaultPlayerViewController.messageChatView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 58,
+      "symbol": "SDLiveDefaultPlayerViewController.inputBar",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 60,
+      "symbol": "SDLiveDefaultPlayerViewController.coverView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 63,
+      "symbol": "SDLiveDefaultPlayerViewController.notifyScrollText",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 65,
+      "symbol": "SDLiveDefaultPlayerViewController.announcementView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 68,
+      "symbol": "SDLiveDefaultPlayerViewController.-initWithLiveView:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 87,
+      "symbol": "SDLiveDefaultPlayerViewController.-setLodingImgName:info:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 88,
+      "symbol": "SDLiveDefaultPlayerViewController.-setLodingImgName:info:isAnim:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 92,
+      "symbol": "SDLiveDefaultPlayerViewController.-statusPause",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 93,
+      "symbol": "SDLiveDefaultPlayerViewController.-statusPlay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 95,
+      "symbol": "SDLiveDefaultPlayerViewController.-removePromptView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 97,
+      "symbol": "SDLiveDefaultPlayerViewController.-statusShowError:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 99,
+      "symbol": "SDLiveDefaultPlayerViewController.-showLoadingBufferView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 101,
+      "symbol": "SDLiveDefaultPlayerViewController.-hiddenLoadingBufferView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 104,
+      "symbol": "SDLiveDefaultPlayerViewController.-showQuestionType:optionCount:answer:sequence:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveDefaultPlayerViewController.h",
+      "line": 106,
+      "symbol": "SDLiveDefaultPlayerViewController.-showQuestionWarning:sequence:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
@@ -2152,55 +2663,62 @@
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveEnvironment.h",
       "line": 64,
+      "symbol": "SDLiveEnvironmentProtocol.httpApiUrl",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveEnvironment.h",
+      "line": 67,
       "symbol": "SDLiveEnvironment",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveEnvironment.h",
-      "line": 67,
+      "line": 70,
       "symbol": "SDLiveEnvironment.+devEnv",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveEnvironment.h",
-      "line": 68,
+      "line": 71,
       "symbol": "SDLiveEnvironment.+qaEnv",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveEnvironment.h",
-      "line": 70,
+      "line": 73,
       "symbol": "SDLiveEnvironment.+proEnv",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveEnvironment.h",
-      "line": 71,
+      "line": 74,
       "symbol": "SDLiveEnvironment.+proEnvOfHushuos",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveEnvironment.h",
-      "line": 84,
+      "line": 87,
       "symbol": "SDLiveEnvironmentService",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveEnvironment.h",
-      "line": 87,
+      "line": 90,
       "symbol": "SDLiveEnvironmentService.+shared",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveEnvironment.h",
-      "line": 89,
+      "line": 92,
       "symbol": "SDLiveEnvironmentService.env",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
@@ -2210,6 +2728,223 @@
       "line": 11,
       "symbol": "SDLiveError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveFullSettingView.h",
+      "line": 15,
+      "symbol": "SDLiveSwitchActionBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveFullSettingView.h",
+      "line": 17,
+      "symbol": "SDLiveFullSettingView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveFullSettingView.h",
+      "line": 19,
+      "symbol": "SDLiveFullSettingView.otherSettingView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveFullSettingView.h",
+      "line": 21,
+      "symbol": "SDLiveFullSettingView.smallActionBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveFullSettingView.h",
+      "line": 23,
+      "symbol": "SDLiveFullSettingView.-setIsliving:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveFullSettingView.h",
+      "line": 24,
+      "symbol": "SDLiveFullSettingView.-setRate:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveFullSettingView.h",
+      "line": 26,
+      "symbol": "SDLiveFullSettingView.-setChatView:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 16,
+      "symbol": "SDLiveTextScrollMode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 17,
+      "symbol": ".SDLiveTextScrollContinuous",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 17,
+      "symbol": "SDLiveTextScrollMode..SDLiveTextScrollContinuous",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 18,
+      "symbol": ".SDLiveTextScrollIntermittent",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 18,
+      "symbol": "SDLiveTextScrollMode..SDLiveTextScrollIntermittent",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 19,
+      "symbol": ".SDLiveTextScrollFromOutside",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 19,
+      "symbol": "SDLiveTextScrollMode..SDLiveTextScrollFromOutside",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 20,
+      "symbol": ".SDLiveTextScrollWandering",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 20,
+      "symbol": "SDLiveTextScrollMode..SDLiveTextScrollWandering",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 26,
+      "symbol": "SDLiveTextScrollMoveDirection",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 27,
+      "symbol": ".SDLiveTextScrollMoveLeft",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 27,
+      "symbol": "SDLiveTextScrollMoveDirection..SDLiveTextScrollMoveLeft",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 28,
+      "symbol": ".SDLiveTextScrollMoveRight",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 28,
+      "symbol": "SDLiveTextScrollMoveDirection..SDLiveTextScrollMoveRight",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 32,
+      "symbol": "SDLiveHorizontalScrollFinishBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 37,
+      "symbol": "SDLiveHorizontalScrollText.text",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 38,
+      "symbol": "SDLiveHorizontalScrollText.textFont",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 39,
+      "symbol": "SDLiveHorizontalScrollText.textColor",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 41,
+      "symbol": "SDLiveHorizontalScrollText.speed",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 43,
+      "symbol": "SDLiveHorizontalScrollText.moveMode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 44,
+      "symbol": "SDLiveHorizontalScrollText.moveDirection",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 46,
+      "symbol": "SDLiveHorizontalScrollText.finishBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 49,
+      "symbol": "SDLiveHorizontalScrollText.-move",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveHorizontalScrollText.h",
+      "line": 50,
+      "symbol": "SDLiveHorizontalScrollText.-stop",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
@@ -2298,42 +3033,42 @@
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveLog.h",
-      "line": 14,
+      "line": 21,
       "symbol": "SDLiveLogEventDebug",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveLog.h",
-      "line": 21,
+      "line": 28,
       "symbol": "SDLiveLogger.-logEvent:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveLog.h",
-      "line": 24,
+      "line": 31,
       "symbol": "SDLiveLog",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveLog.h",
-      "line": 26,
+      "line": 33,
       "symbol": "SDLiveLog.+addLogger:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveLog.h",
-      "line": 35,
+      "line": 42,
       "symbol": "SDLiveLog.+logEvent:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveLog.h",
-      "line": 37,
+      "line": 44,
       "symbol": "SDLiveLog.+logPrintEvent:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
@@ -2515,30 +3250,282 @@
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveManager.h",
-      "line": 191,
+      "line": 226,
       "symbol": "SDLiveManagerDelegate.-manager:event:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveManager.h",
-      "line": 208,
+      "line": 243,
       "symbol": "SDLiveIMDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveManager.h",
-      "line": 380,
+      "line": 415,
       "symbol": "SDLiveManager.tcpSpeed",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveManager.h",
-      "line": 529,
+      "line": 572,
       "symbol": "SDLiveManager.+cleanImageCache",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMenuView.h",
+      "line": 12,
+      "symbol": "SDLiveMenuView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMenuView.h",
+      "line": 15,
+      "symbol": "SDLiveMenuView.playPauseBut",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMenuView.h",
+      "line": 16,
+      "symbol": "SDLiveMenuView.questionBut",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMenuView.h",
+      "line": 17,
+      "symbol": "SDLiveMenuView.progressLab",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMenuView.h",
+      "line": 18,
+      "symbol": "SDLiveMenuView.totalTimeLab",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMenuView.h",
+      "line": 19,
+      "symbol": "SDLiveMenuView.progressView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMenuView.h",
+      "line": 21,
+      "symbol": "SDLiveMenuView.changeViewSizeBut",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMenuView.h",
+      "line": 24,
+      "symbol": "SDLiveMenuView.bottomView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMenuView.h",
+      "line": 25,
+      "symbol": "SDLiveMenuView.keyboardViewBut",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMenuView.h",
+      "line": 26,
+      "symbol": "SDLiveMenuView.settingControlBut",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMenuView.h",
+      "line": 30,
+      "symbol": "SDLiveMenuView.totalTimeInteger",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMenuView.h",
+      "line": 32,
+      "symbol": "SDLiveMenuView.isChangeSlider",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMenuView.h",
+      "line": 34,
+      "symbol": "SDLiveMenuView.-forbidControlButton",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMenuView.h",
+      "line": 36,
+      "symbol": "SDLiveMenuView.-activeControlButton",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 16,
+      "symbol": "SDLiveMessageInputBarStyle",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 16,
+      "symbol": "SDLiveMessageInputBarStyle",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 17,
+      "symbol": "SDLiveMessageInputBarStyle.SDLiveMessageInputBarStyleDefault",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 18,
+      "symbol": "SDLiveMessageInputBarStyle.SDLiveMessageInputBarStyleSendAlways",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 22,
+      "symbol": "SDLiveMessageInputBarDelegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 26,
+      "symbol": "SDLiveMessageInputBarDelegate.-inputBar:replacmentSizeForSize:oldSize:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 28,
+      "symbol": "SDLiveMessageInputBarDelegate.-inputBar:didResizeToSize:oldSize:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 44,
+      "symbol": "SDLiveMessageInputBar.-initWithCoder:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 46,
+      "symbol": "SDLiveMessageInputBar.-initWithStyle:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 48,
+      "symbol": "SDLiveMessageInputBar.style",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 51,
+      "symbol": "SDLiveMessageInputBar.horizontalStackView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 54,
+      "symbol": "SDLiveMessageInputBar.rightAccessoryButton",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 57,
+      "symbol": "SDLiveMessageInputBar.leftAccessoryButton",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 60,
+      "symbol": "SDLiveMessageInputBar.sendButton",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 62,
+      "symbol": "SDLiveMessageInputBar.textView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 65,
+      "symbol": "SDLiveMessageInputBar.delegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 67,
+      "symbol": "SDLiveMessageInputBar.-updateBackgroundIfNeeded",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 72,
+      "symbol": "SDLiveMessageInputBarDidResizeNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMessageInputBar.h",
+      "line": 74,
+      "symbol": "SDLiveMessageInputBarSizeUserInfoKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMoreButton.h",
+      "line": 13,
+      "symbol": "SDLiveMoreButton",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMoreButton.h",
+      "line": 15,
+      "symbol": "SDLiveMoreButton.-initWithMore",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveMoreButton.h",
+      "line": 17,
+      "symbol": "SDLiveMoreButton.actionBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
@@ -2560,6 +3547,48 @@
       "line": 19,
       "symbol": "SDLivePageContainerView.-addPageView:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLivePlayeMutipleLines.h",
+      "line": 12,
+      "symbol": "SDLivePlayeMutipleLinesDelegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLivePlayeMutipleLines.h",
+      "line": 14,
+      "symbol": "SDLivePlayeMutipleLinesDelegate.-didSelectRowAtIndexPath:rate:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLivePlayeMutipleLines.h",
+      "line": 19,
+      "symbol": "SDLivePlayeMutipleLines",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLivePlayeMutipleLines.h",
+      "line": 21,
+      "symbol": "SDLivePlayeMutipleLines.delegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLivePlayeMutipleLines.h",
+      "line": 24,
+      "symbol": "SDLivePlayeMutipleLines.mutipleLines",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLivePlayeMutipleLines.h",
+      "line": 25,
+      "symbol": "SDLivePlayeMutipleLines.mutipleCurSelLineIndex",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
@@ -2647,17 +3676,115 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveProgressDisplayView.h",
+      "line": 12,
+      "symbol": "SDLiveProgressDirection",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveProgressDisplayView.h",
+      "line": 12,
+      "symbol": "SDLiveProgressDirection",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveProgressDisplayView.h",
+      "line": 13,
+      "symbol": "SDLiveProgressDirection.SDLiveProgressDirectionNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveProgressDisplayView.h",
+      "line": 14,
+      "symbol": "SDLiveProgressDirection.SDLiveProgressDirectionLeft",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveProgressDisplayView.h",
+      "line": 15,
+      "symbol": "SDLiveProgressDirection.SDLiveProgressDirectionRight",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveProgressDisplayView.h",
+      "line": 18,
+      "symbol": "SDLiveProgressDisplayView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveProgressDisplayView.h",
+      "line": 20,
+      "symbol": "SDLiveProgressDisplayView.-setProgress:direction:progressStr:totalStr:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveProject-umbrella.h",
-      "line": 33,
+      "line": 57,
       "symbol": "SDLiveProjectVersionNumber",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveProject-umbrella.h",
-      "line": 34,
+      "line": 58,
       "symbol": "SDLiveProjectVersionString",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLivePublicDefine.h",
+      "line": 12,
+      "symbol": "SDLiveBtnActionBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLivePublicDefine.h",
+      "line": 15,
+      "symbol": "SDLivePublicDefine",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveQuestionResultView.h",
+      "line": 13,
+      "symbol": "SDLiveQuestionResultView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveQuestionResultView.h",
+      "line": 15,
+      "symbol": "SDLiveQuestionResultView.imageView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveQuestionResultView.h",
+      "line": 16,
+      "symbol": "SDLiveQuestionResultView.contentLabel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveQuestionResultView.h",
+      "line": 18,
+      "symbol": "SDLiveQuestionResultView.closeBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveQuestionResultView.h",
+      "line": 20,
+      "symbol": "SDLiveQuestionResultView.-setTypeResult:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
@@ -2741,6 +3868,174 @@
       "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveRoomInfo.h",
       "line": 68,
       "symbol": "SDLiveRoomInfo.page",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveSettingMoreView.h",
+      "line": 13,
+      "symbol": "SDLiveSwitchActionBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveSettingMoreView.h",
+      "line": 14,
+      "symbol": "SDLiveSliderActionBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveSettingMoreView.h",
+      "line": 16,
+      "symbol": "SDLiveSettingMoreView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveSettingMoreView.h",
+      "line": 18,
+      "symbol": "SDLiveSettingMoreView.switchBtn",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveSettingMoreView.h",
+      "line": 19,
+      "symbol": "SDLiveSettingMoreView.littleswitch",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveSettingMoreView.h",
+      "line": 22,
+      "symbol": "SDLiveSettingMoreView.isPPTSmall",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveSettingMoreView.h",
+      "line": 24,
+      "symbol": "SDLiveSettingMoreView.switchActionBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveSettingMoreView.h",
+      "line": 25,
+      "symbol": "SDLiveSettingMoreView.smallActionBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveSettingMoreView.h",
+      "line": 27,
+      "symbol": "SDLiveSettingMoreView.speedValueActionBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveSettingMoreView.h",
+      "line": 29,
+      "symbol": "SDLiveSettingMoreView.isLiving",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveSettingMoreView.h",
+      "line": 32,
+      "symbol": "SDLiveSettingMoreView.-setRate:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveTextView.h",
+      "line": 6,
+      "symbol": "SDLiveTextViewMaxLengthType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveTextView.h",
+      "line": 6,
+      "symbol": "SDLiveTextViewMaxLengthType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveTextView.h",
+      "line": 7,
+      "symbol": "SDLiveTextViewMaxLengthType.SDLiveTextViewMaxLengthTypeCustom",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveTextView.h",
+      "line": 8,
+      "symbol": "SDLiveTextViewMaxLengthType.SDLiveTextViewMaxLengthTypeDefault",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveTextView.h",
+      "line": 13,
+      "symbol": "SDLiveTextViewDidChangeBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveTextView.h",
+      "line": 16,
+      "symbol": "SDLiveTextView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveTextView.h",
+      "line": 18,
+      "symbol": "SDLiveTextView.placeHolder",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveTextView.h",
+      "line": 19,
+      "symbol": "SDLiveTextView.placeHolderColor",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveTextView.h",
+      "line": 21,
+      "symbol": "SDLiveTextView.maxStringLength",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveTextView.h",
+      "line": 24,
+      "symbol": "SDLiveTextView.borderWidth",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveTextView.h",
+      "line": 25,
+      "symbol": "SDLiveTextView.cornerRadius",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveTextView.h",
+      "line": 26,
+      "symbol": "SDLiveTextView.borderColor",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ln/Desktop/work_company/gerrit/SDLiveProject/Output/SDLiveProject.framework/Headers/SDLiveTextView.h",
+      "line": 28,
+      "symbol": "SDLiveTextView.didChangeBlock",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     }

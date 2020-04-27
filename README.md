@@ -25,7 +25,7 @@ pod 'SDLiveFramework',:git=>'https://github.com/xingchen-src/sdliveframework.git
 * 稳定版本 
 
 ```ruby
-pod 'SDLiveFramework',:git=>'https://github.com/xingchen-src/sdliveframework.git',:tag=>'1.1.5'
+pod 'SDLiveFramework',:git=>'https://github.com/xingchen-src/sdliveframework.git',:tag=>'1.1.7'
 ```
  
 > **如果主工程有引入欢拓**，请在安装尚直播之后测试欢拓功能是否正常，有问题请联系[尚直播技术人员 huangyaqing@sunlands.com](huangyaqing@sunlands.com)
@@ -405,6 +405,7 @@ SDLiveAudioService 类提供音频下载方法
 ```
 #### 营销推广商品
 修改方法，添加同步序列
+
 ````
 /**
  时间回调
@@ -421,7 +422,9 @@ currentPlayTime:(NSTimeInterval)currentPlayTime
 cacheVideoDuration:(NSTimeInterval)cachedDuration
        sequence:(NSTimeInterval)sequence;
 ````
+
 新增方法
+
 ````
 /// 商品推广消息【该方法仅在直播下触发】
 /// @param manager SDLiveManager
@@ -430,7 +433,7 @@ cacheVideoDuration:(NSTimeInterval)cachedDuration
 -(void)manager:(SDLiveManager* _Nonnull)manager
 didReceiveGoods:( NSArray* _Nullable)goods
        operate:(NSInteger)operate;
-
+       
 /// 商品推广消息【该方法仅在点播下触发】
 /// @param manager SDLiveManager
 /// @param originGoodsInfo 字典数组
@@ -478,6 +481,63 @@ didReceiveGoods:( NSArray* _Nullable)goods
 didReceiveOriginGoodsInfo:( NSArray* _Nullable)originGoodsInfo;
 
 ````
+
+####抽奖通知
+App端主要是抽奖开始和结束通知
+
+```
+/// 开始抽奖通知
+/// @param manager SDLiveManager
+/// @param name 奖品名称
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveStartRaffle:( NSString* _Nullable)name;
+
+/// 学员端抽奖结果通知
+/// @param manager SDLiveManager
+/// @param name 奖品名称
+/// @param isSelf 自己是否是中奖用户
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveEndRaffle:( NSString* _Nullable)name
+winner:(BOOL)isSelf;
+
+```
+
+####答题功能
+App端主要是答题开始和答题结束通知，以及发送答题答案接口
+
+```
+/// 学员端抽奖结果通知
+/// @param manager SDLiveManager
+/// @param name 奖品名称
+/// @param isSelf 自己是否是中奖用户
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveEndRaffle:( NSString* _Nullable)name
+winner:(BOOL)isSelf;
+
+///  发给学员的答题信息
+/// @param manager SDLiveManager
+/// @param questiontype 题目类型。1-单选 2-多选",
+/// @param lSequence 请求毫秒级时间戳
+/// @param optionCount 选项个数(2-5)",
+/// @param answer 排好序的答案ABC..., 无答案传空串
+-(void)manager:(SDLiveManager* _Nonnull)manager
+didReceiveQuestionType:(NSNumber* _Nonnull)questiontype
+      sequence:(NSNumber* _Nonnull)lSequence
+   optionCount:(NSNumber* _Nonnull)optionCount
+        answer:(NSString* _Nonnull)answer;
+
+
+///  发送答题答案
+/// @param answer 答案，为排好序的字符串，如"BC"
+/// @param lSequence 时间戳
+- (void)sendQuestionAnser:(NSString* _Nonnull)answer sequence: (NSNumber *_Nonnull)lSequence;
+```
+
+#### 默认播放页功能
+
+
+主要为SDLiveDefaultPlayerViewController相关的接口和功能
+
 
 #### 环境配置
 当前有四套默认的环境与自定义环境的时候与SDLiveConfig一一对应，可以通过枚举赋值。

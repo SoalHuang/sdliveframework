@@ -59,6 +59,9 @@
 @property(nonatomic,copy,readonly) NSString* imHistoryMessageHost;
 //IM websocket地址
 @property(nonatomic,copy,readonly) NSString* imSocketUrl;
+
+//http接口地址
+@property(nonatomic,copy,readonly) NSString* httpApiUrl;
 @end
 
 @interface SDLiveEnvironment: NSObject<SDLiveEnvironmentProtocol>{
@@ -78,7 +81,7 @@
  @param imHost IM服务域名，如 liveim.hushuos.com
  @return SDLiveEnvironment
  */
-+(SDLiveEnvironment*)customEnvWith:(NSString*)liveHost and:(NSString*)videoHost and:(NSString*)imHost;
++(SDLiveEnvironment*)customEnvWithLiveHost:(NSString*)liveHost videoHost:(NSString*)videoHost imHost:(NSString*)imHost;
 @end
 
 @interface SDLiveEnvironmentService:NSObject{
